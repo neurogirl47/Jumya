@@ -1,0 +1,260 @@
+.game-board {
+	background: #d3d3d3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	border: 20px;
+	border-style: ridge;
+	border-color: #d3d3d3;
+	grid-area: game;
+	grid-template-areas: 
+	"gameheading gameheading gameheading gameheading gameheading"
+	"boxone boxtwo boxthree boxfour boxfive"
+	"boxsix boxseven boxeight boxnine boxten"
+	"boxeleven boxtwelve boxthirteen boxfourteen boxfifteen"
+	"boxsixteen boxseventeen boxeighteen boxnineteen boxtwenty"
+	"boxtwentyone boxtwentytwo boxtwentythree boxtwentyfour boxtwentyfive";
+}
+
+body {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	background: #ffffcc;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 8fr 1fr;
+	grid-gap: 30px;
+	grid-template-areas: 
+	"firstad firstad firstad firstad"
+	"game game game leader"
+	"game game game leader"
+	"game game game leader"
+	"game game game leader"
+	"game game game leader"
+	"game game game leader"
+	"game game game leader"
+	"game game game leader"
+	"secondad secondad secondad secondad";
+
+	@media(min-width: 600px){
+		grid-template-areas: 
+		"firstad"
+		"game"
+		"secondad"
+		"leader";
+	grid-template-rows: 1fr 4fr 1fr 4fr;
+	grid-gap: 10px;
+	}
+}
+
+.gb-heading {
+	background: #7fffd4;
+	grid-area: gameheading;
+}
+
+.gb-heading h1 {
+	text-align: center;
+}
+
+.gb1 #gb100{
+	background: #e9967a;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxone;
+}
+
+.gb1 #gb200{
+	background: #e9967a;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwo;
+}
+
+.gb1 #gb300{
+	background: #e9967a;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxthree;
+}
+
+.gb1 #gb400{
+	background: #e9967a;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxfour;
+}
+
+.gb1 #gb500{
+	background: #e9967a;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxfive;
+}
+
+.gb2 #gb100{
+	background: #e6e6fa;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxsix;
+}
+
+.gb2 #gb200{
+	background: #e6e6fa;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxseven;
+}
+
+.gb2 #gb300{
+	background: #e6e6fa;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxeight;
+}
+
+.gb2 #gb400{
+	background: #e6e6fa;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxnine;
+}
+
+.gb2 #gb500{
+	background: #e6e6fa;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxten;
+}
+
+.gb3 #gb100{
+	background: #f0fff0;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxeleven;
+}
+
+.gb3 #gb200{
+	background: #f0fff0;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwelve;
+}
+
+.gb3 #gb300{
+	background: #f0fff0;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxthirteen;
+}
+
+.gb3 #gb400{
+	background: #f0fff0;
+	font-size: 40px;
+	text-align: center;
+	gird-area: boxfourteen;
+}
+
+.gb3 #gb500{
+	background: #f0fff0;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxfifteen;
+}
+
+.gb4 #gb100{
+	background: #ee82ee;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxsixteen;
+}
+
+.gb4 #gb200{
+	background: #ee82ee;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxseventeen;
+}
+
+.gb4 #gb300{
+	background: #ee82ee;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxeighteen;
+}
+
+.gb4 #gb400{
+	background: #ee82ee;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxnineteen;
+}
+
+.gb4 #gb500{
+	background: #ee82ee;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwenty;
+}
+
+.gb5 #gb100{
+	background: #fafad2;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwentyone;
+}
+
+.gb5 #gb200{
+	background: #fafad2;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwentytwo;
+}
+
+.gb5 #gb300{
+	background: #fafad2;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwentythree;
+}
+
+.gb5 #gb400{
+	background: #fafad2;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwentyfour;
+}
+
+.gb5 #gb500{
+	background: #fafad2;
+	font-size: 40px;
+	text-align: center;
+	grid-area: boxtwentyfive;
+}
+
+.leaderboard {
+	display: grid;
+	grid-area: leader;
+	grid-template-rows: 2fr 18fr;
+	grid-template-areas: 
+		"leadhead"
+		"leadlist";
+}
+
+.leader-heading {
+	grid-area: leadhead;
+}
+
+.leader-list {
+	grid-area: leadlist;
+}
+
+.advert1 {
+	grid-area: firstad;
+	background: #ffe4e1;
+}
+
+.advert2 {
+	grid-area: secondad;
+	background: #ffe4e1;
+}
